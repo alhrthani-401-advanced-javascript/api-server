@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "name": "computer",
+      "display_name": "Computer",
+      "description": "This category is for computer products",
+      "id": 1
+    },
+    {
+      "name": "mobile",
+      "display_name": "Mobile",
+      "description": "This category is for mobile products",
+      "id": 2
+    },
+    {
+      "name": "tv",
+      "display_name": "TV",
+      "description": "This category is for tv products",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "category": "computer",
+      "name": "hp",
+      "display_name": "Hp",
+      "description": "core i7 laptop hp",
+      "id": 1
+    },
+    {
+      "category": "computer",
+      "name": "hp",
+      "display_name": "Hp",
+      "description": "core i7 laptop hp",
+      "id": 2
+    },
+    {
+      "category": "computer",
+      "name": "toshiba",
+      "display_name": "Toshiba",
+      "description": "core i7 laptop toshiba",
+      "id": 3
+    },
+    {
+      "category": "mobile",
+      "name": "samsung",
+      "display_name": "Samsung",
+      "description": "galaxy s10 samsung mobile",
+      "id": 4
+    },
+    {
+      "category": "tv",
+      "name": "lg",
+      "display_name": "LG",
+      "description": "Smart tv lg 340d",
+      "id": 5
+    },
+    {
+      "category": "mobile",
+      "name": "iphone",
+      "display_name": "Iphone",
+      "description": "Apple Iphone X",
+      "id": 6
+    },
+    {
+      "name": "galaxy s8",
+      "category": "mobile",
+      "description": "galaxy s8 mobile",
+      "price": 1.99,
+      "inStock": 0,
+      "id": 7
+    }
+  ]
+}
