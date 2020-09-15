@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-middleware": "^3.4.2",
-    "jest": "^26.4.2",
-    "json-server": "^0.16.1",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "cors": "^2.8.5",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
+    "jest": "^26.4.2"
   }
 }
