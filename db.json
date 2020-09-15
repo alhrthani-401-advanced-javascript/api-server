@@ -1,0 +1,10 @@
+{
+  "categories": [
+    {
+      "name": "cat1",
+      "type": "cat1Type",
+      "id": 1
+    }
+  ],
+  "products": []
+}
