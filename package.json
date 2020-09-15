@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alhrthani-401-advanced-javascript/api-server#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-middleware": "^3.4.2",
     "jest": "^26.4.2",
