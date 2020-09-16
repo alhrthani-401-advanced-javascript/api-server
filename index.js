@@ -1,7 +1,20 @@
 'use strict';
 
-// I will require the server file and start the server here.
-const serverModule = require('./lib/server.js');
+// run ther server and connect to DB
 
-// run my application
-serverModule.start();
+const mongoose = require('mongoose');
+const server = require('./lib/server');
+
+// connection details should be .env file
+const MONGOOSE_URL = process.env.MONGOOSE_URL;
+
+const mongooseOptions = {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+}
+
+mongoose.connect(MONGOOSE_URL, mongooseOptions);
+
+server.start(4000);
