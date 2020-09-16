@@ -23,10 +23,10 @@ function getCategory(req, res, next) {
 }
 
 function postCategory(req, res, next) {
-    console.log("req.body >>> ",req.body)
-    category.create(req.body).then(data=>{
+    console.log("req.body >>> ", req.body)
+    category.create(req.body).then(data => {
         res.status(201).json(data);
-    }).catch(err=> {
+    }).catch(err => {
         // or do .catch(next) like the getFood function
         console.log(err);
         next(err);
@@ -34,10 +34,10 @@ function postCategory(req, res, next) {
 }
 
 function putCategory(req, res, next) {
-    console.log("req.body >>> ",req.body)
-    category.update(req.params.id,req.body).then(data=>{
+    console.log("req.body >>> ", req.body)
+    category.update(req.params.id, req.body).then(data => {
         res.status(201).json(data);
-    }).catch(err=> {
+    }).catch(err => {
         // or do .catch(next) like the getFood function
         console.log(err);
         next(err);
@@ -45,29 +45,16 @@ function putCategory(req, res, next) {
 }
 
 function deleteCategory(req, res, next) {
-    console.log("req.body >>> ",req.body)
-    category.delete(req.params.id).then(data=>{
+    console.log("req.body >>> ", req.body)
+    category.delete(req.params.id).then(data => {
         res.status(201).json(data);
-    }).catch(err=> {
+    }).catch(err => {
         // or do .catch(next) like the getFood function
         console.log(err);
         next(err);
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+module.exports
 
 module.exports = categoryRouter;
