@@ -25,6 +25,7 @@
     "express-middleware": "^3.4.2",
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
+    "optionator": "^0.9.1",
     "supertest": "^4.0.2"
   },
   "devDependencies": {
