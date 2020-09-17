@@ -17,7 +17,12 @@ router.param('model', getModel);
 
 
 // How will we get the right Model? 
-// 
+/**
+ * 
+ * @param {request} req 
+ * @param {response} res 
+ * @param {next} next 
+ */
 function getModel(req, res, next) {
   let model = req.params.model;
   switch (model) {
@@ -34,7 +39,12 @@ function getModel(req, res, next) {
     break;
   }
 }
-
+/**
+ * 
+ * @param {request} req 
+ * @param {response} res 
+ * @param {next} next 
+ */
 function handleGetAllItems(req, res, next) {
   console.log('req.model: ', req.model);
   req.model.get().then(results => {
@@ -42,19 +52,34 @@ function handleGetAllItems(req, res, next) {
     res.json({ count, results });
   });
 }
-
+/**
+ * 
+ * @param {request} req 
+ * @param {response} res 
+ * @param {next} next 
+ */
 function handlePostItem(req, res, next) {
   req.model.create(req.body).then(result => {
     res.json(result);
   }).catch(next);
 }
-
+/**
+ * 
+ * @param {request} req 
+ * @param {response} res 
+ * @param {next} next 
+ */
 function handlePutItem(req, res, next) {
   req.model.update(req.params.id, req.body).then(result => {
     res.json(result);
   }).catch(next);
 }
-
+/**
+ * 
+ * @param {request} req 
+ * @param {response} res 
+ * @param {next} next 
+ */
 function handleDeleteItem(req, res, next) {
   console.log('param id: ', req.params.id);
   req.model.delete(req.params.id).then(result => {
