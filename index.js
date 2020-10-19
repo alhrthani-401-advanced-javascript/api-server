@@ -1,6 +1,7 @@
 'use strict';
 
 // run ther server and connect to DB
+require('dotenv').config();
 
 const mongoose = require('mongoose');
 const server = require('./lib/server');
@@ -20,7 +21,7 @@ const server = require('./lib/server');
 // connect to cloud DB
 // const MONGOOSE_URL = process.env.DATABASE_URL || 'mongodb://localhost:27017/hopes'; 
 
-const uri = "mongodb+srv://ahmad:hopes2020@cluster0.vagkk.mongodb.net/todos?retryWrites=true&w=majority";
+const uri = process.env.MONGOOSE_URL;
 mongoose.connect(uri, {
         useNewUrlParser: true,
         useUnifiedTopology: true
