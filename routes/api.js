@@ -5,6 +5,8 @@ const router = express.Router();
 
 const category = require('../lib/models/categories/categories-collection.js');
 const product = require('../lib/models/products/products-collection.js');
+const todo = require('../lib/models/todos/todos-collection.js');
+
 
 
 router.get('/api/v1/:model', handleGetAllItems);
@@ -34,6 +36,10 @@ function getModel(req, res, next) {
     req.model = product;
     next();
     break;
+    case 'todos':
+      req.model = todo;
+      next();
+      break;
   default:
     next('Invalid Model!!! ');
     break;
