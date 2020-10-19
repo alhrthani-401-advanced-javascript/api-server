@@ -17,4 +17,4 @@ const mongooseOptions = {
 
 mongoose.connect(MONGOOSE_URL, mongooseOptions);
 
-server.start(4000);
+server.start();
